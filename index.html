@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>APEC College Login</title>
+
+<style>
+    body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #4facfe, #00f2fe, #43e97b);
+        background-size: 300% 300%;
+        animation: bg 6s infinite alternate;
+    }
+
+    @keyframes bg {
+        0% {background-position: left;}
+        100% {background-position: right;}
+    }
+
+    .box {
+        width: 370px;
+        padding: 30px;
+        background: white;
+        border-radius: 15px;
+        text-align: center;
+        box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    }
+
+    .logo {
+        width: 90px;
+        height: 90px;
+        object-fit: contain;
+        margin-bottom: 10px;
+    }
+
+    h2 {
+        margin-bottom: 20px;
+        color: #333;
+    }
+
+    input {
+        width: 100%;
+        padding: 12px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        outline: none;
+        transition: 0.3s;
+    }
+
+    input:focus {
+        border-color: #00c6ff;
+        box-shadow: 0 0 8px #00c6ff;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+        background: linear-gradient(90deg, #00c6ff, #0072ff);
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    button:hover {
+        opacity: 0.9;
+    }
+
+    .footer {
+        margin-top: 10px;
+        font-size: 12px;
+        color: gray;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="box">
+
+    <!-- LOGO -->
+    <img src="logo.jpg" alt="College Logo" class="logo">
+
+    <h2>APEC College Login</h2>
+
+    <form>
+        <input type="text" placeholder="Username" required>
+        <input type="password" placeholder="Password" required>
+        <button type="submit">Login</button>
+    </form>
+
+    <div class="footer">
+        Designed for College Project 🚀
+    </div>
+
+</div>
+
+</body>
+</html>
