@@ -14,13 +14,13 @@
         align-items: center;
         font-family: Arial, sans-serif;
 
-        /* 🇮🇳 TRICOLOUR ANIMATION BACKGROUND */
+        /* 🌈 Tricolor background */
         background: linear-gradient(-45deg, #FF9933, #FFFFFF, #138808);
         background-size: 300% 300%;
-        animation: tricolor 8s ease infinite;
+        animation: moveBG 8s ease infinite;
     }
 
-    @keyframes tricolor {
+    @keyframes moveBG {
         0% { background-position: 0% 50%; }
         50% { background-position: 100% 50%; }
         100% { background-position: 0% 50%; }
@@ -44,15 +44,14 @@
     }
 
     h1 {
+        font-size: 20px;
         margin: 5px 0;
-        font-size: 22px;
-        color: #222;
     }
 
     h2 {
+        font-size: 16px;
+        color: #444;
         margin-bottom: 20px;
-        color: #333;
-        font-size: 18px;
     }
 
     input {
@@ -76,8 +75,8 @@
         color: white;
         border: none;
         border-radius: 8px;
-        cursor: pointer;
         font-size: 16px;
+        cursor: pointer;
     }
 
     button:hover {
@@ -96,7 +95,7 @@
 
 <div class="box">
 
-    <!-- LOGO (PUT FILE IN SAME FOLDER) -->
+    <!-- ✅ YOUR UPLOADED LOGO -->
     <img src="logo.png" alt="College Logo" class="logo">
 
     <!-- COLLEGE NAME -->
