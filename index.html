@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,18 +13,21 @@
         justify-content: center;
         align-items: center;
         font-family: Arial, sans-serif;
-        background: linear-gradient(135deg, #00f2fe, #4facfe, #43e97b);
+
+        /* 🇮🇳 TRICOLOUR ANIMATION BACKGROUND */
+        background: linear-gradient(-45deg, #FF9933, #FFFFFF, #138808);
         background-size: 300% 300%;
-        animation: bg 6s infinite alternate;
+        animation: tricolor 8s ease infinite;
     }
 
-    @keyframes bg {
-        0% { background-position: left; }
-        100% { background-position: right; }
+    @keyframes tricolor {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
     }
 
     .box {
-        width: 370px;
+        width: 380px;
         padding: 30px;
         background: white;
         border-radius: 15px;
@@ -34,14 +38,21 @@
     .logo {
         width: 90px;
         height: 90px;
-        object-fit: contain;
+        object-fit: cover;
         border-radius: 10px;
         margin-bottom: 10px;
+    }
+
+    h1 {
+        margin: 5px 0;
+        font-size: 22px;
+        color: #222;
     }
 
     h2 {
         margin-bottom: 20px;
         color: #333;
+        font-size: 18px;
     }
 
     input {
@@ -51,18 +62,17 @@
         border: 1px solid #ccc;
         border-radius: 8px;
         outline: none;
-        transition: 0.3s;
     }
 
     input:focus {
-        border-color: #00c6ff;
-        box-shadow: 0 0 8px #00c6ff;
+        border-color: #138808;
+        box-shadow: 0 0 8px #138808;
     }
 
     button {
         width: 100%;
         padding: 12px;
-        background: linear-gradient(90deg, #00c6ff, #0072ff);
+        background: linear-gradient(90deg, #FF9933, #138808);
         color: white;
         border: none;
         border-radius: 8px;
@@ -86,10 +96,12 @@
 
 <div class="box">
 
-    <!-- COLLEGE LOGO -->
-    <img src="logo.jpg" alt="College Logo" class="logo">
+    <!-- LOGO (PUT FILE IN SAME FOLDER) -->
+    <img src="logo.png" alt="College Logo" class="logo">
 
-    <h2>APEC College Login</h2>
+    <!-- COLLEGE NAME -->
+    <h1>APEC COLLEGE OF ENGINEERING</h1>
+    <h2>Login Portal</h2>
 
     <form>
         <input type="text" placeholder="Username" required>
